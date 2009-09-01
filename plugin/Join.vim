@@ -1,8 +1,8 @@
 " Join: Improved Algorithm for joining large files
 "   Author:		Christian Brabandt <cb@256bit.org>
 "   Date:		Aug  27th, 2009
-"   Version:	2
-" GetLatestVimScripts: xxx 1 Join.vim
+"   Version:		2.1
+" GetLatestVimScripts: 2766 2 :AutoInstall: Join.vim
 
 " Load Once: {{{1
 if exists("g:loaded_Join") || &cp

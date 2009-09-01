@@ -1,4 +1,4 @@
-*Join.txt*  Improved Algorithm for joining large files - Vers 2   Aug 31, 2009
+*Join.txt*  Improved Algorithm for joining many lines - Vers 2.1   Sep 1, 2009
 
 Author:  Christian Brabandt <cb@256bit.org>
 Copyright: (c) 2009 by Christian Brabandt 		      *Join-copyright*
@@ -8,7 +8,8 @@ Copyright: (c) 2009 by Christian Brabandt 		      *Join-copyright*
 
 
 ==============================================================================
-1. Functionality			          	        *:Join* *Join*
+                                                                *:Join* *Join*
+1. Functionality
 
 This plugin tries to implement a different method for joining lines. This is,
 because the :join command from within vim suffers from a serious performance
@@ -70,11 +71,13 @@ You should be able to use :Join as drop in replacement for :join. It behaves
 exactly like :join and understands it's syntax, with the exception of 1 point:
 
 1) :Join does not accept the use of [flags] as |:join| does.
+                                                                     *Join-J*
 
 If you want the J command to call :Join, you can use something like:
 :nmap J :Join<CR>
 to have J call :Join in normal mode and
 :vmap J :Join<CR>
+to have J join the visually selected lines.
 
 ==============================================================================
                                                             *Join-differences*
@@ -89,10 +92,10 @@ page.
 
 ==============================================================================
 4. Join History					                *Join-history*
-	2: Aug 31, 2009		Documentation, fixed several bugs.
-	1: Aug 27, 2009		Internal version, First working version, 
-				using simple commands
+      2.1: Sep  1, 2009	   fixed Documentation, enabled GetLatestScripts
+	2: Aug 31, 2009	   Documentation, fixed several bugs.
+	1: Aug 27, 2009	   Internal version, First working version, 
+			   using simple commands
 
 ==============================================================================
-Modeline:
 vim:tw=78:ts=8:ft=help
